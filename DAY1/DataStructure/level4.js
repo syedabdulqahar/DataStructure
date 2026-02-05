@@ -14,6 +14,12 @@
 
 4. Print this pattern:
 
+*****
+****
+***
+**
+*
+5. pattern 3
 1
 12
 123
@@ -64,12 +70,39 @@ function pattern1() {
     }
     console.log();
   }
+  console.log("\n");
+  display();
+}
+function pattern2() {
+  for (let i = 0; i <= 5; i++) {
+    for (let j = 5; j >= i; j--) {
+      process.stdout.write("*");
+    }
+    console.log();
+  }
+  console.log("\n");
+  display();
+}
+function pattern3() {
+  for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+      process.stdout.write(`${j}`);
+    }
+    console.log();
+    console.log("\n");
+    display();
+  }
+}
+function swap() {
+  r1.question("Enter a Number to swap ");
 }
 
 function display() {
   console.log("1. Find sum of the Number (more than one digit )");
   console.log("2. Counting Iteration of the loop");
-  console.log("2. Making pattern left triangle using Loops");
+  console.log("3. Making pattern left triangle using Loops");
+  console.log("4. Making pattern left triangle bottom up using Loops");
+  console.log("5. Making pattern with Numbers left triangle using Loops");
 
   let choice = 0;
   r1.question("Enter your choice : ", (value) => {
@@ -88,6 +121,9 @@ function display() {
         pattern2();
         break;
       case 5:
+        pattern3();
+        break;
+      case 6:
         SwapNumber();
         break;
     }
