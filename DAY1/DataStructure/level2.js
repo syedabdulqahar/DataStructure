@@ -19,7 +19,7 @@ console.log(`1. Print all numbers between 1 and 100 that are:
           divisible by both → print "FizzBuzz"`);
 console.log(`2. Given a number, reverse it using a loop.
           Example: 123 → 321`);
-console.log("3. Check Whether a giver number is prime or not");
+console.log("3. Check Whether a giver number is PRIME or not");
 console.log(`4. Find the largest number from these values :  10,45,23,99,2`);
 console.log(`5. Find the largest number from dynamic array ?`);
 console.log(`6. Count how many digits are in a number ? `);
