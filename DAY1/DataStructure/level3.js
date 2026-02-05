@@ -129,7 +129,7 @@ function display() {
   console.log(
     "4. To calculate Sum of all EVEN elements  (1 to n) N will be Entered by User",
   );
-  console.log("5. To check FABICONNI of a user input range ");
+  console.log("5. To check Fibonacci of a user input range ");
 
   let choice;
   r1.question("Enter Your Choice : ", (value) => {
