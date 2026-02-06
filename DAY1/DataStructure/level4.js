@@ -89,12 +89,27 @@ function pattern3() {
       process.stdout.write(`${j}`);
     }
     console.log();
-    console.log("\n");
-    display();
   }
+  console.log("\n");
+
+  display();
 }
-function swap() {
-  r1.question("Enter a Number to swap ");
+function SwapNumber() {
+  let arr = [];
+  console.log();
+  r1.question("Enter Number 1 for swapping : ", (value) => {
+    let a = Number(value);
+    r1.question("Enter Number 2 for swapping : ", (value) => {
+      let b = Number(value);
+      console.log(`Original -> a: ${a} | b: ${b}`);
+      a = a + b; //15
+      b = a - b;
+      a = a - b;
+      console.log(`Swapped -> a: ${a} | b: ${b}`);
+      console.log("\n");
+      display();
+    });
+  });
 }
 
 function display() {
@@ -103,6 +118,7 @@ function display() {
   console.log("3. Making pattern left triangle using Loops");
   console.log("4. Making pattern left triangle bottom up using Loops");
   console.log("5. Making pattern with Numbers left triangle using Loops");
+  console.log("6. Swapping Numbers not using temp or third variable ");
 
   let choice = 0;
   r1.question("Enter your choice : ", (value) => {
