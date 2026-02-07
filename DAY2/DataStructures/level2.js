@@ -110,7 +110,7 @@ function Display() {
     "= Note: we are having same array that is taken as input to perform every case =",
   );
   console.log(
-    "-----------------------------------------------------------------------------",
+    "----------------------------------------------------------------------------",
   );
 
   console.log("1. Counting Evens & Odds from Array");
