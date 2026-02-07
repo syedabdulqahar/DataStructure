@@ -28,28 +28,27 @@ const r1 = readline.createInterface({
   output: process.stdout,
 });
 function PrintElements() {
-  let arr = [];
+  //Entering Elements in array from user
+  //store it in number in arrray
+  //Loop through array
+  r1.question(
+    `Enter Element in array (seperate each element with comma ",") : `,
+    (value) => {
+      value = value.split(",");
+      value = value.map(Number);
+      let array1 = [];
 
-  r1.question("Enter size of array : ", (value) => {
-    let Size = Number(value);
-
-    let count = 0;
-
-    function takeInput() {
-      if (count < Size) {
-        r1.question(`Enter Element ${count}: `, (val) => {
-          arr.push(Number(val)); // element add hoga
-          count++;
-          takeInput(); // next input
-        });
-      } else {
-        console.log("Array elements are:", arr);
-        r1.close();
+      for (let i = 0; i < value.length; i++) {
+        array1.push(value[i]);
       }
-    }
-
-    takeInput();
-  });
+      console.log("Whole array : ");
+      console.log(array1);
+      console.log("Printing Elments :");
+      for (let i = 0; i < array1.length; i++) {
+        console.log(`${i} = ${array1[i]}`);
+      }
+    },
+  );
 }
 
 function display() {
