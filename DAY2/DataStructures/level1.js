@@ -54,14 +54,20 @@ function PrintElements() {
   );
 }
 function CountElements() {
-  let count = 0;
-  for (let i = 0; i < array1.length; i++) {
-    console.log(`\t Element ${i} of array1 was ${array1[i]} `);
-    count++;
+  if (array1.length === 0) {
+    console.log(`\n \t X please input array by pressing 1 from the following `);
+    console.log("\n");
+    display();
+  } else {
+    let count = 0;
+    for (let i = 0; i < array1.length; i++) {
+      console.log(`\t Element ${i} of array1 was ${array1[i]} `);
+      count++;
+    }
+    console.log(`\t Count of Array1 is : ${count}`);
+    console.log("\n");
+    display();
   }
-  console.log(`\t Count of Array1 is : ${count}`);
-  console.log("\n");
-  display();
 }
 function SumofArray() {
   if (array1.length === 0) {
@@ -79,16 +85,22 @@ function SumofArray() {
 }
 
 function EvenNumber() {
-  console.log(
-    `Checking Even Number from array1[${array1.length}] = [${array1}] .... `,
-  );
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] % 2 == 0) {
-      console.log(`Number [${array1[i]}] is Even at array1[${i}]`);
+  if (array1.length === 0) {
+    console.log(`\n \t  X please enter elements in array first ! \n`);
+    display();
+  } else {
+    console.log(
+      `Checking Even Number from array1[${array1.length}] = [${array1}] .... `,
+    );
+
+    for (let i = 0; i < array1.length; i++) {
+      if (array1[i] % 2 == 0) {
+        console.log(`Number [${array1[i]}] is Even at array1[${i}]`);
+      }
     }
+    console.log("\n");
+    display();
   }
-  console.log("\n");
-  display();
 }
 function LargestNumber() {
   if (array1.length === 0) {
