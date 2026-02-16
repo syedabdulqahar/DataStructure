@@ -104,7 +104,7 @@ function CopyingArray() {
 }
 function Display() {
   console.log(
-    "-------------------------------Arrays (level2)--------------------------------",
+    "-------------------------------Arrays (level 2)--------------------------------",
   );
   console.log(
     "= Note: we are having same array that is taken as input to perform every case =",
