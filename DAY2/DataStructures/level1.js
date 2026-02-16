@@ -21,7 +21,6 @@ Print only even elements from the array.
 
 Find the largest element using a loop.
   */
-
 const readline = require("readline");
 const r1 = readline.createInterface({
   input: process.stdin,
