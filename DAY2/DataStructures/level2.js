@@ -97,7 +97,7 @@ function CopyingArray() {
   let newArray = [];
   console.log(`previous array : array[${array1}]  `);
   console.log(`copying array1 to other array ...`);
-  newArray = [...array11];
+  newArray = [...array1];
   console.log(`New Array : newArray[${newArray}]`);
   console.log("\n");
   Display();
