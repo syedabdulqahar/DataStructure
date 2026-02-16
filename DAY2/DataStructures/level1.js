@@ -126,7 +126,7 @@ function display() {
     "-------------------------------- Arrays ---------------------------------------",
   );
   console.log(
-    "= Note : Each of the following is using same array which is taken as input from 1 =",
+    ` " Note : Each of the following is using same array which is taken as input from 1 "`,
   );
   console.log(
     "-------------------------------------------------------------------------------",
