@@ -8,7 +8,6 @@ arr = [1, 2, 3]
 insert 4
 
 1️⃣2️⃣ Insert at Beginning
-
 Insert an element at index 0.
 
 1️⃣3️⃣ Insert at Specific Index
