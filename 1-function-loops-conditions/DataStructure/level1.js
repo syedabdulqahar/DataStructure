@@ -1,14 +1,9 @@
 /**
  * Level 1: Variables + Basic Loops
-
 Print numbers from 1 to 10 using a loop.
-
 Print all even numbers between 1 and 50.
-
 Find the sum of numbers from 1 to 100.
-
 Store a number in a variable and print its multiplication table (e.g., table of 5).
-
 Count how many numbers between 1 and 100 are divisible by 3.
  */
 const readline = require("readline");
