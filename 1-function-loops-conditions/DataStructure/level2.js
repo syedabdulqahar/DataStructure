@@ -51,7 +51,7 @@ function ReverseNumber() {
   r1.question("Enter A Number to Reverse it : ", (value) => {
     valuetoreverse = Number(value);
     if (valuetoreverse >= 0 && valuetoreverse <= 9) {
-      console.log(`Reversed value : ${valuetoreverse} `);
+      console.log(`Reversed value : ${valuetoreverse}`);
       return;
     }
     let reversedValue = 0;
