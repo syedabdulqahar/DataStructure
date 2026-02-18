@@ -1,5 +1,4 @@
 /**
- * 
  * 🔴 LEVEL 4 — Deletion Problems
 
 👉 Goal: Left shifting & resizing array
