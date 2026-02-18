@@ -4,7 +4,6 @@
 6️⃣ Count Even & Odd
 
 Count how many even and odd numbers.
-
 7️⃣ Find Smallest Number
 
 Find the minimum element.
