@@ -2,7 +2,6 @@
     1️⃣ Print All Elements
 
 Traverse an array and print each element.
-
 [10, 20, 30, 40]
 
 2️⃣ Count Elements
