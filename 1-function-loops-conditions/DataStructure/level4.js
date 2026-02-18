@@ -111,7 +111,6 @@ function SwapNumber() {
     });
   });
 }
-
 function display() {
   console.log("1. Find sum of the Number (more than one digit )");
   console.log("2. Counting Iteration of the loop");
