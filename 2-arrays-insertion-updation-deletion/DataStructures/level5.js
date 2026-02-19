@@ -58,16 +58,37 @@ const case1 = () => {
   console.log(`Array after removal of duplication = Array[${arr}] `);
 };
 const case2 = () => {
-  let largestNumber = -1;
-  let count = 0;
-  console.log(`Checking the Second Largest Value from Array=[${arr}]`);
+  let LargestNumber = -Infinity;
+  let SecondLargest = -Infinity;
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > largestNumber) {
-      largestNumber = arr[i];
-      count++;
+    if (arr[i] > LargestNumber) {
+      SecondLargest = LargestNumber;
+      LargestNumber = arr[i];
+    }
+    if (arr[i] > SecondLargest && arr[i] != LargestNumber) {
+      SecondLargest = arr[i];
     }
   }
-  console.log(`Largest Number ${largestNumber}`);
+  console.log(`${SecondLargest}`);
+};
+const case3 = () => {
+  let first = arr[0];
+  console.log(`Left Shifting Array = [${arr}]`);
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i + 1];
+  }
+  arr[arr.length - 1] = first;
+  console.log(`After Shifting left = [${arr}] \n`);
+  display();
+};
+const case4 = () => {
+  console.log(`Rotating Array Right -> Array=[${arr}]`);
+  let last = arr[arr.length - 1];
+  for (let i = arr.length - 1; i > 0; i++) {
+    arr[i] = arr[i - 1];
+  }
+  arr[0] = last;
+  console.log(`After Shifting Right -> Array = [${arr}]`);
 };
 function display() {
   console.log(
