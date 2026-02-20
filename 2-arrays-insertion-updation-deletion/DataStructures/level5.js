@@ -90,6 +90,27 @@ const case4 = () => {
   arr[0] = last;
   console.log(`After Shifting Right -> Array = [${arr}]`);
 };
+function case5() {
+  console.log(`Original Array: [${arr}]`);
+  console.log(`Moving all zeros to end...`);
+
+  // Count non-zero elements
+  let count = 0;
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == 0) {
+      count++;
+    } else {
+      result.push(arr[i]);
+    }
+  }
+  while (count !== 0) {
+    result.push(0);
+    count--;
+  }
+  console.log(`Array after putting 0's at the end : [${result}] \n`);
+  display();
+}
 function display() {
   console.log(
     "-------------------------------- Arrays (lvl 4)---------------------------------------",
@@ -123,6 +144,9 @@ function display() {
         break;
       case 4:
         case4();
+        break;
+      case 5:
+        case5();
         break;
 
       default:
